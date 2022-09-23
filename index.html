@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    
+        canvas {
+            background: #eee;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+    <div id="logger">0</div>
+    <button id="pause" >Play/Pause</button>
+    <script type="module">
+        import Game from "./Game.js";
+
+        var canvas = document.getElementById("myCanvas");
+
+        let game = new Game(canvas);
+        game.start();
+
+        document.getElementById("pause").addEventListener("click", (e) => {
+            game.pause();
+        });
+    </script>
+</body>
+</html>
