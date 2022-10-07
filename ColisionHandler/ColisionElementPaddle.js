@@ -1,4 +1,4 @@
-import ColisionDetector from "../ColisionDetector.js";
+import ColisionDetector from "../colisionDetector.js";
 
 export default {
     handleColision(paddle, element) {
