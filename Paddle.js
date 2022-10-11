@@ -1,7 +1,7 @@
 import Element from './Element.js';
 
-export default class Paddle extends Element{
-    constructor(context, canvas, { x, y, h, w } = { x: 200, y: 200, h: 10, w: 75}){
+export default class Paddle extends Element {
+    constructor(context, canvas, { x, y, h, w } = { x: 200, y: 200, h: 10, w: 75 }) {
         super(context, canvas);
 
         this.h = h;
